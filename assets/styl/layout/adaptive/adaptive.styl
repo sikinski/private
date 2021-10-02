@@ -11,8 +11,8 @@
                     height 46px
             .user
                 .user-pic
-                    height: 3.4rem
-                    width: 3.4rem
+                    height 3.4rem
+                    width 3.4rem
                 .user-info
                     .name-user
                         font-size 1rem
@@ -29,7 +29,7 @@
                 font-size 1.75rem
             .desc 
                 margin-left 57px
-                font-size 0.78rem
+                font-size 0.88rem
         .nav-list-wrapper
             .nav-element 
                 a
@@ -40,7 +40,7 @@
                 ul
                     .inner-list
                         padding 0
-                        padding-left 48px
+                        padding-left 38px
                         font-size 15px
 @media only screen and (max-width: 2166px) 
     .header
@@ -61,8 +61,8 @@
             .user
                 .user-pic
                     padding 0.07rem 0
-                    height: 3.1rem
-                    width: 3.1rem
+                    height 3.1rem
+                    width 3.1rem
                 .user-info
                     padding 0.3rem 0.6rem
                     .mail-user
@@ -86,7 +86,7 @@
                 // padding 0 1.3rem
                 a
                     .title
-                        font-size: 17px
+                        font-size 17px
                     .arrow 
                         right 29px
                 ul
@@ -110,8 +110,8 @@
             .user
                 .user-pic
                     margin 5px 0
-                    height: 2.7rem
-                    width: 2.7rem
+                    height 2.7rem
+                    width 2.7rem
                 .user-info
                     .mail-user
                         font-size 0.7rem
@@ -159,11 +159,11 @@
                     margin 13px 11px
             .user
                 .user-pic
-                    margin-top: 10px
-                    height: 2.4rem
-                    width: 2.4rem
+                    margin-top 10px
+                    height 2.4rem
+                    width 2.4rem
                 .user-info
-                    margin-top: 5px
+                    margin-top 5px
                     .name-user
                         font-size 0.9rem
                     .mail-user
@@ -176,7 +176,7 @@
                 height 39px
             .workload
                 margin-left 40px
-                margin-top -14px
+                margin-top -12px
                 font-size 1.75rem
             .desc 
                 margin-left 40px
@@ -186,7 +186,7 @@
                 a
                     .title
                         padding 4px 13.5px
-                        font-size: 15px
+                        font-size 15px
                     .arrow 
                         right 48px
                 ul
@@ -203,9 +203,9 @@
         .nav-header
             height 86px
             .workload
-                font-size: 1.60rem
+                font-size 1.60rem
             .desc 
-                font-size: 0.75rem
+                font-size 0.75rem
         
             
 @media only screen and (max-width: 1566px) 
@@ -225,8 +225,8 @@
             .user
                 .user-pic
                     margin 9px 0
-                    height: 2.6rem
-                    width: 2.6rem
+                    height 2.6rem
+                    width 2.6rem
                 .user-info
                     .mail-user
                         font-size 0.7rem
@@ -238,7 +238,7 @@
                 height 37px
             .workload
                 margin-left 49px
-                margin-top -14px
+                margin-top -9px
                 font-size 1.75rem
             .desc 
                 margin-left 49px
@@ -250,7 +250,7 @@
                     .title
                         padding 4px 15px
                     .arrow 
-                        right 46px
+                        right 40px
                 ul
                     .inner-list
                         padding-left 35px
@@ -289,6 +289,11 @@
                 height 2.8rem
                 margin 0 10px
                 form
+                    label
+                        .search-input
+                            font-size 1rem
+                        .search-input::placeholder
+                            font-size 0.9rem
                     .search-icon
                         top 12px
             .header-btns
@@ -298,8 +303,8 @@
                     margin 10px 
             .user
                 .user-pic
-                    height: 2rem
-                    width: 2rem
+                    height 2rem
+                    width 2rem
                     margin 0.7rem 1rem
                 .user-info
                     padding 0.4rem 0
@@ -321,7 +326,7 @@
                 font-size 1.5rem
             .desc 
                 margin-left 47px
-                font-size 0.6rem
+                font-size 0.7rem
         .nav-list-wrapper
             width 95%
             padding 10px 5px
@@ -331,13 +336,14 @@
                 a
                     padding 0.5rem 1rem
                     .icon
-                        font-size 17px
+                        font-size 16px
+                        min-width 20px
                     .title
                         // padding 5px 13.8px
-                        font-size 0.8rem
+                        font-size 0.9rem
                     .arrow 
-                        right 30px
-                ul
+                        right 25px
+                .inner-list-wrapper
                     .inner-list
                         padding-left 42px
                         font-size 12px
@@ -351,23 +357,33 @@
                 width 30px 
                 height 30px
             .workload
-                font-size: 1.2rem
+                font-size 1.2rem
                 margin-left 37px
             .desc
-                font-size: 0.45rem
+                font-size 0.55rem
                 margin-left 37px
 
         .nav-list-wrapper
             .nav-element 
                 a
                     .icon
-                        font-size 11px
+                        font-size 13px
                         min-width 20px
                     .title 
                         padding 3px 5px
-                        font-size 0.6rem
+                        font-size 0.8rem
                     .arrow
                         right 17px
+                .inner-list-wrapper
+                    .inner-list
+                        padding-left 29px
+                        font-size 10px
+                    .inner-list:hover
+                        padding-left 40px
+                    .inner-list::before
+                        left 1.5rem
+                    .inner-list:hover:before
+                        width 0.8rem
     .header
         height 70px
         border-left 2px solid #f8f8f8
@@ -383,7 +399,7 @@
                 height 2.55rem
                 form
                     .search-icon
-                        font-size: 10px
+                        font-size 10px
             .header-btns
                 .header-btn
                     width 26px
@@ -391,8 +407,8 @@
                     margin 7px
             .user
                 .user-pic
-                    height: 2rem
-                    width: 2rem
+                    height 2rem
+                    width 2rem
                     margin 0.3rem 0.7rem
                 .user-info
                     padding 0.2rem 0
@@ -444,7 +460,7 @@
             .logo
                 width 39.5px
                 height 39.5px
-                transform: translate(50%, 50%)
+                transform translate(50%, 50%)
             .workload
                 display none
             .desc
@@ -455,7 +471,7 @@
                 a
                     .icon 
                         padding 0
-                        font-size: 1.375rem
+                        font-size 1.375rem
                         min-width 20px
                         margin 0 auto
                     .title 
