@@ -37,12 +37,16 @@
         display flex
         position relative
         height 100%
+        min-width 38%
+        justify-content: space-between
         padding 30px 15px
         .search
-            display block
+            display flex
+            flex-direction: column
+            align-items: center
             position relative
             width 19.75rem
-            height 3.75rem
+            height 100%
             margin 0 10px
             form
                 width 100%
@@ -63,24 +67,42 @@
                 .search-icon
                     font-size 1.150rem
                     position absolute
-                    top 18px
+                    top calc(50% - 12px)
                     right 17px
                     color grayCol
         .header-btns
+            height 100%
+            display flex
+            align-items center
+            justify-content: space-around
+            padding 0 8px
             .header-btn
+                margin 0 7px
                 width 48px
                 height 48px
-                margin 6px 18px
         .user
             display flex
+            align-items center
             margin-left 0.875rem
             .user-pic
+                display flex
+                position relative
+                height 3.75rem
+                width 3.75rem
+                flex-direction: column
+                margin auto 0
+                img
                     height 3.75rem
                     width 3.75rem
                     border-radius 4.25rem
                     
             .user-info
-                padding 0.6rem 9px
+                display flex
+                flex-direction column
+                justify-content space-around
+                height 100%
+                width auto
+                padding 5px 10px
                 .name-user
                     font-weight 600
                     font-size 1.125rem
