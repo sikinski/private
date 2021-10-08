@@ -1,103 +1,117 @@
 navWidth = 17.4%
 
 .nav 
-    display flex
-    position absolute
-    flex-direction column
-    top 0
-    left 0
-    width navWidth
-    height 100vh
-    // overflow-y scroll
-    background-color white
-    .nav-header
+  display flex
+  position absolute
+  flex-direction column
+  top 0
+  left 0
+  width navWidth
+  height 100vh
+  // overflow-y scroll
+  background-color white
+
+  .nav-header
+    position relative
+    width 100%
+    height: 7.5rem
+    max-height 119px
+    padding 37px 30px
+
+    .logo
+      position absolute
+      width 48px
+      height 48px
+      top 0
+      left 0
+      transform: translate(50%, 70%)
+
+    .workload
+      margin-left 60px
+      margin-top -10px
+      font-size 2rem
+      font-weight 600
+      font-family 'Nunito'
+      font 'Nunito'
+
+    .desc 
+      margin-left 60px
+      font-size 0.875rem
+      font-weight 400
+      white-space nowrap
+      font-family 'Nunito'
+      font 'Nunito'
+
+  .nav-list-wrapper
+    width 90%
+    margin 0 auto
+    padding-top: 0.9375rem
+
+    .nav-element
+      width 100%
+      padding 0
+
+      a
+        display flex
         position relative
         width 100%
-        height: 7.5rem
-        max-height 119px
-        padding 37px 30px
-        .logo
-            position absolute
-            width 48px
-            height 48px
-            top 0
-            left 0
-            transform: translate(50%, 70%)
-        .workload
-            margin-left 60px
-            margin-top -10px
-            font-size 2rem
-            font-weight 600
-            font-family 'Nunito'
-            font 'Nunito'
-        .desc 
-            margin-left 60px
-            font-size 0.875rem
-            font-weight 400
-            white-space nowrap
-            font-family 'Nunito'
-            font 'Nunito'
+        padding 1rem 2.1875rem
+        font-weight 500
+        color grayCol
 
-    .nav-list-wrapper
-        width 90%
-        margin 0 auto
-        padding-top: 0.9375rem
-        .nav-element
-            width 100%
-            padding 0
-            a
-                display flex
-                position relative
-                width 100%
-                padding 1rem 2.1875rem
-                font-weight 500
-                color grayCol
-                .icon
-                    position relative
-                    display block
-                    font-size 1.3rem
-                    min-width 35px
-                .title 
-                    position relative
-                    display block
-                    margin 0
-                    padding 3px 9px
-                    font-weight bold
-                    font-size 18px
-                .arrow
-                    position absolute
-                    right 3.5rem
-                    top calc(50% - 10px)
-            a:hover
-                color greenCol
-            .active
-                background-color listHoverCol
-                border-radius 3.875rem
-                color greenCol
-            .inner-list-wrapper 
-                padding 0 0.5rem 
-                .inner-list
-                    position relative
-                    color grayCol
-                    transition all 0.5s
-                    font-size 0.9375rem
-                    padding-left 32px
-                .inner-list::before
-                    content ""
-                    position absolute
-                    height 0.125rem
-                    width 0.325rem
-                    background-color greenCol
-                    left 2.15rem
-                    top 50%
-                    transform translateY(-50%)
-                    transition all 0.5s
-                .inner-list:hover
-                    padding-left 55px
-                .inner-list:hover:before
-                    width 1rem
+        .icon
+          position relative
+          display block
+          font-size 1.3rem
+          min-width 35px
+
+        .title 
+          position relative
+          display block
+          margin 0
+          padding 3px 9px
+          font-weight bold
+          font-size 18px
+
+        .arrow
+          position absolute
+          right 3.5rem
+          top calc(50% - 10px)
+      a:hover
+        color greenCol
+
+      .active
+        background-color listHoverCol
+        border-radius 3.875rem
+        color greenCol
+
+      .inner-list-wrapper 
+        padding 0 0.5rem 
+
+        .inner-list
+          position relative
+          color grayCol
+          transition all 0.5s
+          font-size 0.9375rem
+          padding-left 32px
+
+        .inner-list::before
+          content ""
+          position absolute
+          height 0.125rem
+          width 0.325rem
+          background-color greenCol
+          left 2.15rem
+          top 50%
+          transform translateY(-50%)
+          transition all 0.5s
+        .inner-list:hover
+          padding-left 55px
+        .inner-list:hover:before
+          width 1rem
+          
 .nav-webkit-scrollbar 
-    width 5px
-    background-color #f9f9fd
+  width 5px
+  background-color #f9f9fd
 .nav-webkit-scrollbar-thumb 
-    background-color rgb(229, 229, 233)
+  background-color rgb(229, 229, 233)

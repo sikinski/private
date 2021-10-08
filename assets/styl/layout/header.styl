@@ -1,111 +1,129 @@
 .header
+  display flex
+  position relative
+  width calc(100% - navWidth)
+  margin-left navWidth
+  height 119px
+  background-color white
+  justify-content space-between
+  transition 0.3s ease
+  border-left 1px solid #f8f8f8
+
+  .header-left
     display flex
     position relative
-    width calc(100% - navWidth)
-    margin-left navWidth
-    height 119px
-    background-color white
-    justify-content space-between
-    transition 0.3s ease
-    border-left 1px solid #f8f8f8
-    .header-left
+    width 20%
+    height 100%
+    padding 0 10px
+
+    .toggle-nav
+      height 100%
+      font-size 1.5rem
+      margin 0 30px
+
+    .toggle-nav::before
+      content: ''
+      display inline-block
+      vertical-align: middle
+      height 100%
+
+    .name-page 
+      margin 0 8px
+      font-size 2rem
+      font-weight 700
+      height 100%
+
+    .name-page::before
+      content: ''
+      display inline-block
+      vertical-align: middle
+      height 100%
+
+  .header-right
+    display flex
+    position relative
+    height 100%
+    min-width 38%
+    justify-content: space-between
+    padding 30px 15px
+
+    .search
+      display flex
+      flex-direction: column
+      align-items: center
+      position relative
+      width 19.75rem
+      height 100%
+      margin 0 10px
+
+      form
+        width 100%
+        height 100%
+
+        label
+          .search-input
+            width 100%
+            height 100%
+            border-radius 3.125rem
+            padding 0 20px
+            padding-right 50px
+            background-color #eeeeee
+            font-size 1.2rem
+
+          .search-input::placeholder
+            font-size 1rem
+            font-weight 400
+            line-height 1.5
+
+        .search-icon
+          font-size 1.150rem
+          position absolute
+          top calc(50% - 12px)
+          right 17px
+          color grayCol
+
+    .header-btns
+      height 100%
+      display flex
+      align-items center
+      justify-content: space-around
+      padding 0 8px
+
+      .header-btn
+        margin 0 7px
+        width 48px
+        height 48px
+
+    .user
+      display flex
+      align-items center
+      margin-left 0.875rem
+
+      .user-pic
         display flex
         position relative
-        width 20%
-        height 100%
-        padding 0 10px
-        .toggle-nav
-            height 100%
-            font-size 1.5rem
-            margin 0 30px
-        .toggle-nav::before
-            content: ''
-            display inline-block
-            vertical-align: middle
-            height 100%
-        .name-page 
-            margin 0 8px
-            font-size 2rem
-            font-weight 700
-            height 100%
-        .name-page::before
-            content: ''
-            display inline-block
-            vertical-align: middle
-            height 100%
-    .header-right
+        height 3.75rem
+        width 3.75rem
+        flex-direction: column
+        margin auto 0
+
+        img
+          height 3.75rem
+          width 3.75rem
+          border-radius 4.25rem
+          
+      .user-info
         display flex
-        position relative
+        flex-direction column
+        justify-content space-around
         height 100%
-        min-width 38%
-        justify-content: space-between
-        padding 30px 15px
-        .search
-            display flex
-            flex-direction: column
-            align-items: center
-            position relative
-            width 19.75rem
-            height 100%
-            margin 0 10px
-            form
-                width 100%
-                height 100%
-                label
-                    .search-input
-                        width 100%
-                        height 100%
-                        border-radius 3.125rem
-                        padding 0 20px
-                        padding-right 50px
-                        background-color #eeeeee
-                        font-size 1.2rem
-                    .search-input::placeholder
-                        font-size 1rem
-                        font-weight 400
-                        line-height 1.5
-                .search-icon
-                    font-size 1.150rem
-                    position absolute
-                    top calc(50% - 12px)
-                    right 17px
-                    color grayCol
-        .header-btns
-            height 100%
-            display flex
-            align-items center
-            justify-content: space-around
-            padding 0 8px
-            .header-btn
-                margin 0 7px
-                width 48px
-                height 48px
-        .user
-            display flex
-            align-items center
-            margin-left 0.875rem
-            .user-pic
-                display flex
-                position relative
-                height 3.75rem
-                width 3.75rem
-                flex-direction: column
-                margin auto 0
-                img
-                    height 3.75rem
-                    width 3.75rem
-                    border-radius 4.25rem
-                    
-            .user-info
-                display flex
-                flex-direction column
-                justify-content space-around
-                height 100%
-                width auto
-                padding 5px 10px
-                .name-user
-                    font-weight 600
-                    font-size 1.125rem
-                .mail-user
-                    font-size 0.75rem
-                    font-weight 400
+        width auto
+        padding 5px 10px
+
+        .name-user
+          font-weight 600
+          font-size 1.125rem
+          
+        .mail-user
+          font-size 0.75rem
+          font-weight 400
