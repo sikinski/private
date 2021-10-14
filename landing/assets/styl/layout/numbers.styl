@@ -1,10 +1,11 @@
 .numbers
   display grid
   position relative
-  padding 162px 99px 142px 95px
+  padding 162px 79px 142px 75px
   background-color #0B2C58
   grid-template-columns 29.5% 38.5% 31.8%
   grid-template-rows 1fr 1fr
+  grid-column-gap: 10px
 
   .number-block
     display flex
@@ -14,13 +15,14 @@
 
     .number
       font-weight 600
-      font-size calc(20px + (58 - 20) * (100vw - 320px) / 1360) // 58 to 20
+      font-size 64px
       letter-spacing 0.2px
       color #32D882
       white-space nowrap
-    
+
     .text
       font-size 16px
+      font-weight normal
       line-height 20px
       color white
       max-width 149px

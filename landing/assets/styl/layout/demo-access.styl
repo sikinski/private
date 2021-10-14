@@ -7,12 +7,12 @@
     display flex
     position relative
     width 100%
-    padding 0 61px
     background-color white
+    justify-content space-between
     box-shadow 0px 16px 32px rgba(0, 0, 0, 0.08)
 
     .text-wrapper
-      padding 123px 0 103px 0
+      padding 123px 0 103px 61px
       width 48.5%
 
       .title
@@ -27,19 +27,21 @@
     .inputs
       position relative
       width 50.5%
-      padding 123px 57px 103px 71px
+      padding 123px 0 103px 0
       border-left 2px solid #E5E5E5
+      text-align center
 
       input 
-        width 100%
+        width 579px
         height 48px
-        margin 6px 0
         border 1px solid #E5ECED
         box-shadow 0px 1px 6px rgba(0, 0, 0, 0.06)
         border-radius 2px
         padding-left 16px
-        font-size 18px 
+        font-size 16px 
+        font-weight normal
         color #233247
+        margin 6px auto
 
       input::placeholder
         font-size 16px
@@ -49,7 +51,8 @@
       .phone-num
         display flex
         position relative
-        width 100%
+        width 579px
+        margin 0 auto
 
         .country-code
           width 38% //220px
@@ -61,7 +64,7 @@
       .get-demo-access
         width 343px
         height 64px
-        float right
+        margin-left 33%
         margin-top 54px
         font-weight 600
         font-size 16px
