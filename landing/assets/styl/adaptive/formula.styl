@@ -1,51 +1,44 @@
-@media only screen and (min-width 1680px)
+
+@media only screen and (max-width 1680px)
     .start
-        height 812px
+        height calc(534px + (812 - 534) * ((100vw - 320px) / 1360)) // 534px to 812 
         .start-main
-            padding-left 93px
-            .heading 
-                font-size 72px
-            .desc 
-                font-size 24px
+            padding-left calc(93  * ((100vw - 320px) / 1360)) // 93 to 0
+            .heading
+                font-size calc(28px + (72 - 28) * ((100vw - 320px) / 1360)) // 72px to 18px 
+                line-height calc(31px + (81 - 31) * ((100vw - 320px) / 1360))
+            .desc
+                font-size calc(13px + (24 - 13) * ((100vw - 320px) / 1360)) //24px to 14px
     .advantages
         .advs-wrapper
             .adv-container
                 .text
                     .title
-                        font-size 24px
+                        font-size calc(15px + (24 - 15) * (100vw - 15px) / 1360)//24 to 15
                     .desc
-                        font-size 16px
-    // .key-capabilities
-    //     .title
-    //         font-size: 40px
-    //     .grid-wrapper 
-    //         .item
-    //             width 92px
-    //             height 92px
-    //             .text
-    //                 font-size: 24px
-    .numbers
-        .number-block
-            font-size 58px
-
-@media only screen and (max-width 1680px)
-    .start
-        height calc(534px + (812 - 534) * ((100vw - 320px) / (1680 - 320))) // 534px to 812 
-        .start-main
-            padding-left calc(93  * ((100vw - 320px) / (1680 - 320))) // 93 to 0
-            .heading
-                font-size calc(28px + (72 - 28) * ((100vw - 320px) / (1680 - 320))) // 72px to 18px 
-                line-height calc(31px + (81 - 31) * ((100vw - 320px) / (1680 - 320)))
-            .desc
-                font-size calc(13px + (24 - 13) * ((100vw - 320px) / (1680 - 320))) //24px to 14px
+                        font-size calc(12px + (16 - 12) * (100vw - 12px) / 1360) // 16 to 12
     .key-capabilities
         .title
             font-size calc(26px + (40 - 26) * (100vw - 320px) / (1680 - 360)) // 26 to 40
-        .icon
+        .item
             .icon-wrapper
                 width calc(35px + (92 - 35) * (100vw - 320px) / (1680 - 360)) // 92 to 35
                 height calc(35px + (92 - 35) * (100vw - 320px) / (1680 - 360))
+            .text
+                font-size calc(13px + (24 - 13) * (100vw - 320px) / (1680 - 360))
+        // .phone
+        //     .phone-pic 
+        //         width calc(35px + (339 - 35) * (100vw - 320px) / (1680 - 360))
+        //         height calc(35px + (653 - 35) * (100vw - 320px) / (1680 - 360))
     .numbers
         .number-block
             .number
                 font-size calc(20px + (64 - 20) * (100vw - 320px) / 1360) // 58 to 20
+    .demo-access 
+        .block
+            .text-wrapper
+                padding-left calc(10px + (61 - 10) * (100vw - 320px) / 1360) // 58 to 20
+            .inputs
+                .get-demo-access
+                    width calc(120px + (343 - 120) * (100vw - 320px) / (1680 - 360)) // 92 to 35
+                    height calc(40px + (64 - 40) * (100vw - 320px) / (1680 - 360)) // 92 to 35
