@@ -13,7 +13,7 @@
 
 @media only screen and (max-width 1367px)
     .start
-        padding 10px 65px 
+        padding 10px 55px 
         .header
             .header-btns
                   .language-btn
@@ -36,16 +36,16 @@
             .heading
                 max-width 100%
             .search
-                height 50px
+                height 45px
                 form
                     .name-or-TIN-input
-                        width 490px
+                        width 470px
                     .name-or-TIN-input::placeholder
                         font-weight 600
                         font-size 14px
                     .search-company-btn
-                        width 214px
-                        font-size: 12px
+                        width 210px
+                        font-size: 10px
     .logo-company 
         width 60px
         height 26px
@@ -142,6 +142,11 @@
 
 @media only screen and (max-width 1100px)
     .start
+        .header
+            .header-btns
+                .sign-in-btn
+                    width 120px
+                    height 35px
         .start-main
             .desc
                 max-width 70%
@@ -166,8 +171,12 @@
     .indicators
         .text-wrapper
             .title
-                font-size 35px
-                line-height 45px
+                font-size 32px
+                line-height 35px
+                margin-bottom: 45px
+            .view-data-btn
+                width 180px
+                height 50px
 
         .pics-wrapper
             .header-text
@@ -175,6 +184,23 @@
                     font-size 18px
                 p
                     font-size: 11px
+            .pics
+                margin-top: 30%
+    .vedprofile-API
+        .overhead-text
+            font-size: 12px
+        .title
+            font-size 35px
+        .content
+            width 95%
+            .data-companies
+                .title
+                    max-width 90%
+                    font-size 28px
+                    line-height 25px
+                .learn-more-btn
+                    width 180px
+                    height 50px
     .tariffs
         padding 80px 60px 
         .tariff-container
@@ -185,15 +211,18 @@
                 .desc-tariff
                     font-size 14px
                 .arrange-btn
-                    width 180px
-                    height 35px
+                    width 75%
+                    height 40px
+                    font-size: 12px
         .title
             font-size 32px
         .desc 
             font-size: 14px
             line-height 20px
     .numbers
-        padding 95px 40px
+        padding 85px 40px
+        grid-rows-gap: 10px
+
         .number-block
             height auto
             .number
@@ -213,9 +242,9 @@
                 input::placeholder
                     font-size 14px
                 .get-demo-access
-                    width 240px
-                    height 49px
-                    font-size 12px
+                    width 180px
+                    height 45px
+                    font-size 10px
     .logo-company 
         width 52px
         height 22px
@@ -230,242 +259,272 @@
         .copyright 
             font-size 10px
 
+@media only screen and (max-width 870px)
+    .start
+        .header
+            .header-btns
+                .language-btn
+                    height 25px
+                    margin 10px 15px
+                    .name-language
+                        font-size 12px
+                    .flag-country
+                        width 23px
+                        height 23px
+                        margin-right: 8px
+                .sign-in-btn
+                    width 90px
+                    height 30px
+                    line-height 15px
+                    margin 10px 0
+                    font-size 10px
+        .start-main
+            padding-top 60px
+            .desc
+                max-width 70%
+                line-height 23px
+            .search
+                width 100%
+                flex-direction column
+                justify-content space-between
+                form
+                    .name-or-TIN-input
+                        width 90%
+                        height 38%
+                        margin 15px 0
+                        font-size 13px
+                    .name-or-TIN-input::placeholder
+                        font-size 13px
+                    .search-company-btn
+                        width 38%
+                        height 38%
+                        margin 0
+                        font-size 12px
+    .key-capabilities
+        .grid-wrapper 
+            .phone
+                margin-top: 90px
+    .indicators
+        .pics-wrapper
+            .header-text
+                justify-content: center
+                .gradient-left, .gradient-right
+                    display none
 
-// @media only screen and (max-width 721px) 
-//      // --------START-------------
-//     .start
-//         .header
-//             .header-btns
-//                 .language-btn
-//                     height 25px
-//                     margin 0 15px
-//                     .name-language
-//                         font-size 12px
-//                     .flag-country
-//                         width 23px
-//                         height 23px
-//                         margin-right: 8px
-//                 .sign-in-btn
-//                     width 90.75px
-//                     height 26px
-//                     margin 0
-//                     font-size 13px
-//         .start-main
-//             .desc
-//                 max-width 70%
-//                 line-height 23px
-//             .search
-//                 width 100%
-//                 flex-direction column
-//                 justify-content space-between
-//                 height 150px
-//                 form
-//                     .name-or-TIN-input
-//                         width 95%
-//                         padding 5px 14.5px
-//                         height 50%
-//                         margin 15px 0
-//                         font-size 13px
-//                     .name-or-TIN-input::placeholder
-//                         font-size 13px
-//                     .search-company-btn
-//                         width 50%
-//                         height 45%
-//                         margin 0
-//                         font-size 12px
-//     //---------advantages -----------
-//     .advantages
-//         padding 30px 10px
-//         .advs-wrapper
-//             width 100%
-//             margin 0
-//             .adv-container
-//                 padding 15px 0
-//                 height auto
-//                 margin-bottom 10px
-//                 padding-right 8px
-//                 .icon
-//                     width 23px
-//                     height 23px
-//                 .text
-//                     .desc
-//                         margin 9px 0
-//         .pics
-//             display none
-//     // ------- capabilities ---------
-//     .key-capabilities
-//         padding 50px 20px
-//         .title
-//             padding-top 13px
-//             padding-bottom 29px
-//         .grid-wrapper 
-//             grid-template-columns 1fr 1fr
-//             grid-auto-rows auto
-//             grid-gap 30px
-//             .item
-//                 padding 0
-//                 margin 0
-//                 .icon-wrapper
-//                     margin 0
-//                     float left
-//                 .text
-//                     text-align left
-//                     padding 0
-//                     margin 0
-//                     margin-top: 45px
-//                     font-size 13px
-//                     line-height 18px
-//             .phone
-//                 display none
-//     // ----- indicators ------
-//     .indicators
-//         padding 30px 15px
-//         .text-wrapper
-//             width 100%
-//             .overhead-text
-//                 font-size: 10px
-//             .title
-//                 text-align center
-//                 font-size: 26px
-//                 line-height 30px
-//                 margin: 25px auto
-//             .view-data-btn
-//                 width 50%
-//                 margin 20px auto
-//                 height 50px
-//                 font-size: 13px
-//         .pics-wrapper
-//             display none
-//     // ---- element ---- 
-//      .green-line-desc
-//         padding-left 15px
-//         font-size 13px
-//         line-height 22px
-//         margin: 14px 0
-//     //-----vedprof API --------
-//     .vedprofile-API
-//         width 100%
-//         height auto
-//         padding 30px 10px
-//         margin 0
-//         .overhead-text
-//             display none
-//         .title
-//             font-size: 25px
-//         .content
-//             width 100%
-//             margin 0
-//             padding 20px 0
-//             .pic-wrapper 
-//                 display none
-//             .circles-icon
-//                 display none
-//             .data-companies
-//                 width 100%
-//                 .title
-//                     word-wrap wrap
-//                     font-size: 21px
-//                     line-height 30px
-//                 .learn-more-btn
-//                     margin 0
-//                     width 50%
-//                     float right
-//                     height 50px
-//                     font-size 14px
-//         .bg
-//             top 80%
-//             opacity 0.4
-//     //-----tarrifs ----------
-//     .tariffs
-//         padding 20px 15px
-//         .title 
-//             font-size: 25px
-//             line-height 35px
-//             text-align: center
-//             padding 20px 0
-//         .desc
-//             display none // Need to add display block 'Что это?' + modal window
-//         .tariff-container
-//             grid-template-columns 1fr 1fr
-//             grid-template-rows 1fr 1fr 1fr 1fr
-//             height auto
-//             margin 15px 0
-//             grid-gap 27.27px 12.82px
-//             .tariff
-//                 display flex
-//                 flex-direction column
-//                 justify-content space-between
-//                 padding 10px 0
-//                 height auto
-//                 // grid-auto-rows: minmax(200px, auto)
-//                 .number-companies
-//                     font-size 14px
-//                 .desc-tariff
-//                     display none
-//                 .arrange-btn
-//                     width 60%
-//                     height 30px
-//                     margin 10px auto
-//                     font-size 13px
-//             .year-tariff
-//                 grid-column 2/2
-//                 grid-row 4/4
-//     .numbers
-//         padding 30px 10px
-//         grid-template-columns 1fr 1fr
-//         grid-template-rows 1fr 1fr 1fr
-//         .number-block
-//             flex-direction column
-//             align-items center
-//             height auto
-//             text-align: center
-//             // font-size 25px
-//             .text
-//                 font-size: 12px
-//                 margin 10px 0
-//         .bg
-//             top 40%
+    .vedprofile-API
+        .content
+            margin-top 0
+            .pic-wrapper
+                display none 
+    .demo-access
+        padding 43px 30px 
+        .block
+            flex-direction: column
+            .text-wrapper
+                width 100%
+                padding 0
+                .title
+                    margin 15px 0
+                    text-align: center
+                .green-line-desc
+                    margin-top: 0
+                    margin 20px 40px
+                    
+            .inputs
+                width 100%
+                border none
+                padding 0
+                .get-demo-access
+                    margin 30px auto
+    .footer
+        .copyright
+            display none
+            
 
-//     .demo-access
-//         padding 13px 8px
-//         .block
-//             width 100%
-//             padding 15px
-//             flex-direction column
-//             .text-wrapper
-//                 width 100%
-//                 padding 0
-//                 .title
-//                     text-align: center
-//                     font-size 25px
-//                     padding 10px 0
-//                 .green-line-desc
-//                     margin 15px 0
-//             .inputs
-//                 width 100%
-//                 padding 10px 15px
-//                 border none
-//                 input
-//                     padding-left 8px
-//                 input::placeholder
-//                         font-size 13px
-//                 .get-demo-access
-//                     width 60%
-//                     height 44px
-//                     float none
-//                     margin 0 auto
-//                     margin-top: 20px
-//                     font-size: 12px
-//     .footer
-//         width 100%
-//         height auto
-//         justify-content: space-between
-//         padding 10px 15px
-//         .copyright 
-//             display none
-//         .terms-of-use
-//             right 8%
-//             font-size 12px
+@media only screen and (max-width 769px) 
+    .advantages
+        padding 30px 10px
+        .advs-wrapper
+            width 100%
+            margin 0
+            .adv-container
+                padding 15px 0
+                height auto
+                margin-bottom 10px
+                padding-right 8px
+                .icon
+                    width 23px
+                    height 23px
+                .text
+                    .desc
+                        margin 9px 0
+        .pics
+            display none
+    .key-capabilities
+        padding 50px 
+        .title
+            padding-top 0
+            padding-bottom 29px
+        .grid-wrapper 
+            grid-template-columns 1fr 1fr
+            grid-auto-rows auto
+            grid-gap 30px
+            .item
+                padding 0
+                margin 0
+                .icon-wrapper
+                    margin 0 auto
+                .text
+                    text-align left
+                    padding 0
+                    margin 0
+                    margin-top: 30px
+                    font-size 16px
+                    line-height 18px
+            .item-1, .item-3, .item-5
+                .icon-wrapper
+                    float none
+            .phone
+                display none
+    .indicators
+        padding 55px 30px
+        .text-wrapper
+            width 100%
+            margin 0 auto
+            .overhead-text
+                font-size: 10px
+            .title
+                text-align center
+                font-size: 26px
+                line-height 30px
+                margin: 25px auto
+            .view-data-btn
+                width 30%
+                margin 20px auto
+                height 50px
+                font-size: 13px
+            .green-line-desc
+                margin 30px 0
+                font-size: 16px
+        .pics-wrapper
+            display none
+
+    .vedprofile-API
+        width 100%
+        height auto
+        padding 40px 30px
+        margin 0
+        .overhead-text
+            display none
+        .title
+            font-size: 25px
+        .content
+            width 100%
+            margin 0
+            padding 10px 0
+            .pic-wrapper 
+                display none
+            .circles-icon
+                display block
+            .data-companies
+                width 100%
+                .title
+                    margin 0
+                    word-wrap wrap
+                    font-size: 18px
+                    line-height 25px
+                .desc
+                    font-size: 16px
+                .learn-more-btn
+                    margin 0
+                    width 50%
+                    float none
+                    height 50px
+                    font-size 14px
+        .bg
+            top 2%
+            opacity 0.4
+    //     //-----tarrifs ----------
+    .tariffs
+        margin-top 0
+        padding 30px 50px
+        .title 
+            font-size: 25px
+            line-height 35px
+            text-align: center
+            padding 20px 0
+        .tariff-container
+            grid-template-columns 1fr 1fr
+            grid-template-rows 1fr 1fr 1fr 1fr
+            height auto
+            margin 40px 0
+            grid-gap 20.27px 12.82px
+            .tariff
+                display flex
+                flex-direction column
+                justify-content space-between
+                padding 10px 
+                height auto
+                .desc-tariff
+                    margin 8px 0
+
+                .arrange-btn
+                    width 60%
+                    height 30px
+                    margin 10px auto
+                    font-size 13px
+            .year-tariff
+                grid-column 2/2
+                grid-row 4/4
+    .numbers
+        padding 40px 10px
+        grid-template-columns 1fr 1fr
+        grid-template-rows 1fr 1fr 1fr
+        .number-block
+            flex-direction column
+            align-items center
+            height auto
+            text-align: center
+            // font-size 25px
+            margin 20px 0
+            .text
+                font-size: 12px
+                margin 10px 0
+        .bg
+            top 40%
+    .footer
+        justify-content: space-between
+        .terms-of-use
+            right 8%
+            font-size 12px
+@media only screen and (max-width 660px)
+    .start
+        padding 15px
+        .start-main
+            padding-top 20px
+            .search
+                form
+                    .search-company-btn
+                        width 45%
+                        font-size: 10px
+    .vedprofile-API
+        .content
+            display flex
+            width 100%
+            padding 30px 5px
+            align-items center
+            position relative
+            justify-content: space-between
+            .data-companies
+                width 80%
+    .numbers
+        .number-block
+            .number
+                font-size: 24px
+    .demo-access
+        padding 0
+        .block
+            padding 30px 0
 
 @media only screen and (max-width 425px)
     .logo-wrapper
@@ -475,19 +534,6 @@
             height 25px
         .logo-text
             visibility hidden
-    .start
-        padding 12px 15px
-        .start-main
-            .desc 
-                max-width 100%
-            .search
-                width 112px
-                form
-                    .name-or-TIN-input
-                        width 93%
-                    .search-company-btn
-                        height 40%
-                        font-size 9px
     .key-capabilities
         padding 50px 20px
         .grid-wrapper 
@@ -503,6 +549,7 @@
                 .learn-more-btn
                     width 80%
     .tariffs
+        padding 30px
         .tariff-container
             .tariff
                 .arrange-btn
@@ -516,18 +563,4 @@
             .inputs
                 .get-demo-access
                     width 80%
-
-// @media only screen and (min-width 1380px)
-//     .start
-//         .start-main
-//             .search
-//                 height 56px
-//                 margin 20.6px 0
-//                 form
-//                     .name-or-TIN-input
-//                         width 475px
-//                     .search-company-btn
-//                         width 260px
-//                         font-size 14px
                     
-
