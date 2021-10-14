@@ -27,3 +27,25 @@
     .numbers
         .number-block
             font-size 58px
+
+@media only screen and (max-width 1680px)
+    .start
+        height calc(534px + (812 - 534) * ((100vw - 320px) / (1680 - 320))) // 534px to 812 
+        .start-main
+            padding-left calc(93  * ((100vw - 320px) / (1680 - 320))) // 93 to 0
+            .heading
+                font-size calc(28px + (72 - 28) * ((100vw - 320px) / (1680 - 320))) // 72px to 18px 
+                line-height calc(31px + (81 - 31) * ((100vw - 320px) / (1680 - 320)))
+            .desc
+                font-size calc(13px + (24 - 13) * ((100vw - 320px) / (1680 - 320))) //24px to 14px
+    .key-capabilities
+        .title
+            font-size calc(26px + (40 - 26) * (100vw - 320px) / (1680 - 360)) // 26 to 40
+        .icon
+            .icon-wrapper
+                width calc(35px + (92 - 35) * (100vw - 320px) / (1680 - 360)) // 92 to 35
+                height calc(35px + (92 - 35) * (100vw - 320px) / (1680 - 360))
+    .numbers
+        .number-block
+            .number
+                font-size calc(20px + (64 - 20) * (100vw - 320px) / 1360) // 58 to 20
