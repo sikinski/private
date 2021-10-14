@@ -13,24 +13,25 @@
 
 @media only screen and (max-width 1367px)
     .start
-        padding 27.5px 65px 
-        .header-btns
-              .language-btn
-                display flex
-                margin 0 54px
-                align-items: center
+        padding 10px 65px 
+        .header
+            .header-btns
+                  .language-btn
+                    display flex
+                    margin 0 54px
+                    align-items: center
 
-                .flag-country
-                  width 25px
-                  height 25px
-                  margin-right 5px
+                    .flag-country
+                      width 25px
+                      height 25px
+                      margin-right 8px
 
-                .name-language
-                  font-size 12px
+                    .name-language
+                      font-size 12px
 
-              .sign-in-btn
-                width 130px
-                height 30px
+                  .sign-in-btn
+                    width 130px
+                    height 40px
         .start-main
             .heading
                 max-width 100%
@@ -60,6 +61,7 @@
         align-items: center
         padding-bottom 66px
         .advs-wrapper
+            margin 0
             width 37.8% //586px
             .adv-container
                 padding-right 15px
@@ -139,6 +141,16 @@
 
 
 @media only screen and (max-width 1100px)
+    .start
+        .start-main
+            .desc
+                max-width 70%
+            .search
+                margin-bottom: 0
+                form
+                    .name-or-TIN-input
+                        font-size: 14px
+
     .key-capabilities
         .grid-wrapper 
             .item
@@ -151,12 +163,45 @@
         .content
             .circles-icon
                 display none
+    .indicators
+        .text-wrapper
+            .title
+                font-size 35px
+                line-height 45px
+
+        .pics-wrapper
+            .header-text
+                .title
+                    font-size 18px
+                p
+                    font-size: 11px
     .tariffs
-        padding 100px 80px 
+        padding 80px 60px 
+        .tariff-container
+            grid-gap 17.27px 22.82px
+            .tariff
+                .number-companies
+                    font-size 20px
+                .desc-tariff
+                    font-size 14px
+                .arrange-btn
+                    width 180px
+                    height 35px
+        .title
+            font-size 32px
         .desc 
-            font-size: 18px
-            line-height 32px
-            
+            font-size: 14px
+            line-height 20px
+    .numbers
+        padding 95px 40px
+        .number-block
+            height auto
+            .number
+                font-size 40px
+            .text
+                max-width auto
+                font-size 12px
+
     .demo-access
         .block
             .text-wrapper
@@ -167,10 +212,10 @@
                     font-size: 16px
                 input::placeholder
                     font-size 14px
-            .get-demo-access
-                width 263px
-                height 49px
-                font-size 12px
+                .get-demo-access
+                    width 240px
+                    height 49px
+                    font-size 12px
     .logo-company 
         width 52px
         height 22px
@@ -182,6 +227,9 @@
         margin-left 6px
     .footer
         padding 10px 36px
+        .copyright 
+            font-size 10px
+
 
 // @media only screen and (max-width 721px) 
 //      // --------START-------------
