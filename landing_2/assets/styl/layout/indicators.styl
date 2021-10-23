@@ -7,7 +7,10 @@
         box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.04);
         border-radius: 49px;
         padding 53px 0 28px 88px
+        justify-content: space-between
         .text-wrapper
+            max-width 60%
+            margin-bottom 48px
             .overhead-text
                 font-weight: bold
                 font-size: 31px
@@ -21,6 +24,7 @@
                 font-size: 36px;
                 line-height: 39px;
                 color: #233247;
+                // max-width 60%
             .desc
                 font-weight: bold;
                 font-size: 36px;
@@ -29,14 +33,17 @@
         .pic-wrapper
             display flex
             position relative
-            width 29.5%
+            width 36%
+            height 713px
             margin-top 54px
             align-items: center
             min-height 100%
             .phone-pic
                 display block
-                width 430px
-                height 860px
+                position absolute
+                // width 430px
+                // height 860px
+                transform translate(3%, 4%)
         .pagination
             display flex
             position absolute
