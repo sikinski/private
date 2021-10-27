@@ -10,6 +10,7 @@
             box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.04);
             border-radius: 49px;
             padding 62px 53px 0 78px
+            overflow hidden
             .left-side
                 display flex
                 flex-direction: column
@@ -19,15 +20,16 @@
                 width 42%
                 .overhead-text
                     font-family: 'AvertaStd';
-                    font-style: normal;
                     font-weight: bold;
                     font-size: 31px;
                     line-height: 38px;
                     color: #3F85DD;
                 .phone-pic
-                    width: 430px
-                    // height: 504px
+                    max-width 100%
+                    position absolute
+                    margin-top 49%
             .text-wrapper
+                position relative
                 width 55%
                 padding-bottom 67px
                 .title
@@ -44,11 +46,10 @@
                     line-height: 39px
                     color: #909090
                 .find-data-btn
-                    width: 459px;
+                    width: 459px;//71% 
                     height: 67px;
                     float right
                     margin-top 34px
                     font-family: 'AvertaStd';
                     font-weight: 600;
                     font-size: 26px;
-                    line-height: 18px;
