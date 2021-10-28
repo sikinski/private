@@ -1,60 +1,68 @@
 .tariffs
-    position relative
-    background-color black
-    .inner-block
-        padding 172px 157px 85px 231px
-        .title
-            font-weight: bold;
-            font-size: 57px;
-            line-height: 64px;
-            color grayTextCol
-            max-width 75%
-        .subtitle
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 39px;
-            color white
-            padding 76px 0
-            max-width 80%
-            span
-                color #ACACAC
-        .tariffs-wrapper
-            display grid
+  position relative
+  background-color black
+
+  .inner-block
+    padding 172px 157px 85px 231px
+
+    .title
+      font-weight bold
+      font-size 57px
+      line-height 64px
+      color grayTextCol
+      max-width 75%
+    .subtitle
+      font-weight bold
+      font-size 36px
+      line-height 39px
+      color white
+      padding 76px 0
+      max-width 80%
+      span
+        color #ACACAC
+
+    .tariffs-wrapper
+      display grid
+      position relative
+      grid-template-columns 1fr 1fr
+      grid-template-rows 1fr 1fr 1fr 1fr
+      grid-gap 31px 29px
+
+      .tariff
+        background rgba(43, 43, 43, 0.79)
+        box-shadow 0px 4px 48px rgba(0, 0, 0, 0.04)
+        border-radius 49px
+        padding 30px 60px
+
+        .number-company
+          font-family 'AvertaStd'
+          font-weight bold
+          font-size 31px
+          line-height 38px
+          color grayTextCol
+
+        .desc
+          padding 12px 0
+          font-weight 600
+          font-size 34px
+          line-height 39px
+          color white
+
+          .arrange
+            display inline-block
             position relative
-            grid-template-columns: 1fr 1fr
-            grid-template-rows 1fr 1fr 1fr 1fr
-            grid-gap 31px 29px
-            .tariff
-                background: rgba(43, 43, 43, 0.79);
-                box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.04);
-                border-radius: 49px;
-                padding 30px 60px
-                .number-company
-                    font-family: 'AvertaStd'
-                    font-weight: bold
-                    font-size: 31px
-                    line-height: 38px
-                    color grayTextCol
-                .desc
-                    padding 12px 0
-                    font-weight: 600;
-                    font-size: 34px;
-                    line-height: 39px;
-                    color white
-                    .arrange
-                        display inline-block
-                        position relative
-                        color grayTextCol
-                        &:after
-                            content ""
-                            display block
-                            background-image: url(../../icons/arrow-right-green.svg)
-                            background-repeat: no-repeat
-                            background-size: contain
-                            position: absolute;
-                            right: -50px;
-                            bottom: -5px;
-                            width 40px
-                            height 40px
-            .year-tariff
-                background-color #029448
+            color grayTextCol
+            &:after
+              content ""
+              display block
+              background-image url(../../icons/arrow-right-green.svg)
+              background-repeat no-repeat
+              background-size contain
+              position absolute
+              right -50px
+              bottom -5px
+              width 40px
+              height 40px
+
+      .year-tariff
+        background-color #029448
