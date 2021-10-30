@@ -1,3 +1,8 @@
+@media only screen and (min-width 1800px)
+    .numbers
+        .inner-block
+            .numbers-wrapper
+                margin-top 10%
 @media only screen and (max-width 1440px)
     //----- HEADER -----
     .header
@@ -131,9 +136,15 @@
                         font-size 22px
     //----- NUMBERS -----
     .numbers
-
         .inner-block
-            padding 302px 0 260px 0
+            padding 290px 0
+            .numbers-wrapper
+                margin-top 10px
+                .number-block
+                    .number
+                        font-size 58px
+                    .text 
+                        font-size 14px
             
 @media only screen and (max-width 1366px)
     //----- START -----
@@ -470,6 +481,19 @@
                             height 25px
                             right -34px
                             bottom 1px
+    //----- NUMBERS -----
+    .numbers
+        .inner-block
+            padding 260px 0
+            .numbers-wrapper
+                margin-left 24%
+                margin-top 0
+                grid-gap 80px 40px
+                .number-block
+                    .number
+                        font-size 58px
+                    .text 
+                        font-size 14px
 
 @media only screen and (max-width 1024px)
     //----- HEADER -----
@@ -670,3 +694,19 @@
                             height 20px
                             right -25px
                             bottom 1px
+    //----- NUMBERS -----
+    .numbers
+        &::before 
+            opacity 0.3
+        .inner-block
+            padding 80px 0 120px 0
+            .numbers-wrapper
+                width 600px
+                margin 0 auto
+                grid-gap 60px 40px
+                .number-block
+                    .number
+                        font-size 40px
+                    .text 
+                        font-size 12px
+                        line-height 16px

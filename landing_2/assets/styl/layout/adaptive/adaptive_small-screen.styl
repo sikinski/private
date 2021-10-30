@@ -201,7 +201,27 @@
                         height 47px
                         margin-top 34px
                         font-size 14px
-                        
+    //----- NUMBERS -----
+    .numbers
+        &::before 
+            opacity 0.3
+            background-position-y center
+        .inner-block
+            padding 55px 0 120px 0
+            .numbers-wrapper
+                width 400px
+                grid-gap 30px 40px 
+                .number-block
+                    flex-direction column
+                    .number
+                        font-size 35px
+                        text-align: center
+                    .text 
+                        font-size 10px
+                        line-height 13px
+                        text-align: center
+                        margin-left 0
+                        margin-top 4px
 
 @media only screen and (max-width 620px)
     //----- START -----
@@ -619,6 +639,15 @@
                         text-align center
                         font-size 20px
                         line-height 24px
+    //----- NUMBERS -----
+    .numbers
+        .inner-block
+            padding 30px 0 120px 0
+            .numbers-wrapper
+                width 80%
+                .number-block
+                    .number
+                        font-size 30px
 
 
 @media only screen and (max-width 375px)
@@ -686,3 +715,12 @@
                     .desc
                         font-size 20px
                         line-height 22px
+    //----- NUMBERS -----
+    .numbers
+        .inner-block
+            .numbers-wrapper
+                width 100%
+                grid-gap 30px 20px
+                .number-block
+                    .number
+                        font-size 26px

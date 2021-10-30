@@ -1,22 +1,32 @@
 .numbers
     position relative
     background-color black
-    background-image url(../../images/numbers-bg.png)
-    background-position-x center
-    background-size contain
-    background-repeat no-repeat
+    &::before 
+      content: "";
+      background-image: url(../../images/numbers-bg.png);
+      background-size: contain;
+      background-position-x center
+      background-repeat no-repeat
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
 
     .inner-block
-        padding 402px 0 360px 0
+        padding 317px 0
 
         .numbers-wrapper
             display grid
             position relative
             grid-template-columns 1fr 1fr
             grid-template-rows 1fr 1fr 1fr
-            grid-row-gap 151px
-            margin-left 25%
+            grid-gap 87px 50px
+            margin-left 26%
             margin-right 17.7%
+            margin-top 45px
+            width auto
 
             .number-block
                 display flex
@@ -27,7 +37,6 @@
                     font-family 'AvertaStd'
                     font-weight 600
                     font-size 64px
-                    // line-height 22px
                     letter-spacing 0.2px
                     color #F81680
                     white-space nowrap 
@@ -38,4 +47,4 @@
                     font-size 16px
                     line-height 20px
                     color white
-                    margin-left 19px
+                    margin-left 9.67px//19px
