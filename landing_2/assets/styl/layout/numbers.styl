@@ -1,51 +1,52 @@
 .numbers
-    position relative
-    background-color black
-    &::before 
-      content: "";
-      background-image: url(../../images/numbers-bg.png);
-      background-size: contain;
-      background-position-x center
-      background-repeat no-repeat
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1;
+  position relative
+  background-color black
 
-    .inner-block
-        padding 317px 0
-        padding-bottom 474px
+  &::before 
+    content ""
+    background-image url(../../images/numbers-bg.png)
+    background-size contain
+    background-position-x center
+    background-repeat no-repeat
+    position absolute
+    top 0px
+    right 0px
+    bottom 0px
+    left 0px
+    opacity 1
 
-        .numbers-wrapper
-            display grid
-            position relative
-            grid-template-columns 1fr 1fr
-            grid-template-rows 1fr 1fr 1fr
-            grid-gap 87px 50px
-            margin-left 26%
-            margin-right 17.7%
-            margin-top 45px
-            width auto
+  .inner-block
+    padding 317px 0
+    padding-bottom 474px
 
-            .number-block
-                display flex
-                position relative
-                width auto
+    .numbers-wrapper
+      display grid
+      position relative
+      grid-template-columns 1fr 1fr
+      grid-template-rows 1fr 1fr 1fr
+      grid-gap 87px 50px
+      margin-left 26%
+      margin-right 17.7%
+      margin-top 45px
+      width auto
 
-                .number
-                    font-family 'AvertaStd'
-                    font-weight 600
-                    font-size 64px
-                    letter-spacing 0.2px
-                    color #F81680
-                    white-space nowrap 
+      .number-block
+        display flex
+        position relative
+        width auto
 
-                .text
-                    font-family 'AvertaStd'
-                    font-weight normal
-                    font-size 16px
-                    line-height 20px
-                    color white
-                    margin-left 9.67px//19px
+        .number
+          font-family 'AvertaStd'
+          font-weight 600
+          font-size 64px
+          letter-spacing 0.2px
+          color #F81680
+          white-space nowrap 
+
+        .text
+          font-family 'AvertaStd'
+          font-weight normal
+          font-size 16px
+          line-height 20px
+          color white
+          margin-left 9.67px
