@@ -5,6 +5,9 @@
         margin-top 10%
 
 @media only screen and (max-width 1440px)
+  .pd-header
+    padding-left 82px
+    padding-right 107px
   //----- START -----
 
   .start
@@ -218,6 +221,33 @@
 
 
 @media only screen and (max-width 1366px)
+  //----- HEADER -----
+  .header
+    .inner-block
+      a
+        .logo
+          width 61px
+          height 21px
+        .logo-text
+          font-size 30px
+          margin-left 6px
+          .ved-text
+            font-size 30px
+      .nav-wrapper
+        .item
+          font-size 18px
+          &:hover
+            font-size 20px
+      .search
+        width 26%
+        form
+          input
+            padding-left 40px
+            .search-icon
+              width 22px
+              height 22px
+              top 22%
+
   //----- START -----
 
   .start
@@ -235,7 +265,7 @@
           max-width 83%
 
         .search
-          height 70px
+          height 65px
           margin 35px 0
           form
 
@@ -355,14 +385,36 @@
               line-height 37px
 
 @media only screen and (max-width 1280px)
+  .pd-header
+    padding 0 56px
   //----- HEADER -----
-
   .header
-
     .inner-block
-
+      a
+        .logo
+          width 54px
+          height 19px
+        .logo-text
+          font-size 28px
+          margin-left 6px
+          .ved-text
+            font-size 28px
+      .search
+        width 22%
+        form
+          height 55%
+          input
+            &::placeholder
+              font-size 16px
+            .search-icon
+              width 18px
+              height 18px
+              top 23%
       .sign-in
+        height 30px
+        width 100px
         font-size 12px
+      
   //----- START -----
 
   .start
@@ -661,8 +713,8 @@
           margin-left 30px
 @media only screen and (max-width 1024px)
   .pd-header
-    padding-left 62px
-    padding-right 67px
+    padding-left 45px
+    padding-right 60px
   //----- HEADER -----
 
   .header
@@ -670,6 +722,7 @@
 
     .inner-block
 
+      a
         .logo
           width 66px
           height 28px
@@ -680,9 +733,12 @@
           .ved-text
             font-size 28px
 
-      .sign-in
-        width 103px
-        height 30px
+      .nav-wrapper
+        display none
+      
+      .search
+        margin-left 32%
+
   //----- START -----
 
   .start
