@@ -1,0 +1,54 @@
+.quotation {
+  display: flex;
+  position: relative;
+  max-width: 715px;
+  padding: 37px 47px;
+  height: auto;
+  background: #ddf3ff;
+  border-radius: 42px;
+
+  .quote-mark {
+    position: relative;
+    width: 45px;
+
+    img {
+      position: absolute;
+    }
+  }
+  .opening-mark {
+    img {
+      top: 0;
+    }
+  }
+
+  .quote-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 41px;
+
+    .text {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 160%;
+      color: #004f71;
+      max-width: 64%;
+    }
+    .stars {
+      display: flex;
+      position: relative;
+      margin-top: 20px;
+      .star {
+        margin: 8px 0;
+        margin-right: 12px;
+      }
+    }
+  }
+  .closing-mark {
+    img {
+      bottom: 30px;
+    }
+  }
+}
