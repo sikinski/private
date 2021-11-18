@@ -1,29 +1,16 @@
 .news {
-  position: relative; }
-  .news .heading {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
-    color: #004f71; }
-  .news .news-list-btn {
-    position: absolute;
-    width: 264px;
-    height: 69px;
-    background: none;
-    right: 0;
-    top: 10px;
-    border: 2px solid rgba(0, 158, 226, 0.15);
-    border-radius: 68px;
-    font-size: 14px;
-    color: #009ee2; }
+  position: relative;
+  margin-top: 176px; }
+  .news .header {
+    display: flex;
+    justify-content: space-between; }
   .news .news-wrapper {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    margin-top: 0;
-    padding-top: 0; }
+    margin: 25px 0; }
     .news .news-wrapper .news-card {
       width: 28%; }
       .news .news-wrapper .news-card .cover-pic {
@@ -34,20 +21,68 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 160%;
-        color: #004f71; }
+        color: #004f71;
+        margin-top: 26.5px; }
       .news .news-wrapper .news-card .desc {
         font-size: 14px;
         line-height: 150%;
-        color: rgba(0, 79, 113, 0.5); }
+        color: rgba(0, 79, 113, 0.5);
+        margin: 11px 0; }
       .news .news-wrapper .news-card .date {
         font-size: 14px;
         line-height: 150%;
         color: rgba(0, 79, 113, 0.5); }
 
+.basic-lessons {
+  padding: 36.5px; }
+  .basic-lessons .header {
+    display: flex;
+    justify-content: space-between; }
+  .basic-lessons .lessons-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 32px 0; }
+    .basic-lessons .lessons-wrapper .arrow-btn {
+      width: 40px;
+      height: 40px;
+      margin: 0 23px;
+      border: 2px solid rgba(0, 158, 226, 0.15);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%; }
+    .basic-lessons .lessons-wrapper .arrow-left {
+      background-image: url(../../icons/arrow-left.svg);
+      background-size: contain; }
+    .basic-lessons .lessons-wrapper .arrow-right {
+      background-image: url(../../icons/arrow-right.svg);
+      background-size: contain; }
+    .basic-lessons .lessons-wrapper .lessons {
+      display: flex;
+      justify-content: space-between; }
+      .basic-lessons .lessons-wrapper .lessons .lesson {
+        width: 31.4%; }
+        .basic-lessons .lessons-wrapper .lessons .lesson .cover-pic {
+          width: 100%;
+          height: auto; }
+        .basic-lessons .lessons-wrapper .lessons .lesson .access-text {
+          position: absolute;
+          bottom: -22px;
+          font-size: 14px;
+          line-height: 150%;
+          color: #34e590; }
+
 body {
-  padding-top: 176px;
   font-family: "Open Sans"; }
 
 .inner-block {
   padding: 0 89px 0 109px;
   max-width: 1615px; }
+
+.heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #004f71; }

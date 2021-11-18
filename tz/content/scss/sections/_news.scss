@@ -1,31 +1,19 @@
 .news {
   position: relative;
-  .heading {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
-    color: #004f71;
+  margin-top: 176px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
   }
-  .news-list-btn {
-    position: absolute;
-    width: 264px;
-    height: 69px;
-    background: none;
-    right: 0;
-    top: 10px;
-    border: 2px solid rgba(0, 158, 226, 0.15);
-    border-radius: 68px;
-    font-size: 14px;
-    color: #009ee2;
-  }
+
   .news-wrapper {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 25px 0;
     .news-card {
       width: 28%;
       .cover-pic {
@@ -38,11 +26,13 @@
         font-size: 18px;
         line-height: 160%;
         color: #004f71;
+        margin-top: 26.5px;
       }
       .desc {
         font-size: 14px;
         line-height: 150%;
         color: rgba(0, 79, 113, 0.5);
+        margin: 11px 0;
       }
       .date {
         font-size: 14px;
