@@ -1,0 +1,13 @@
+@import "sections/news.scss";
+@import "sections/basic-lessons.scss";
+@import "sections/add-lessons.scss";
+@import "sections/ethers.scss";
+
+body {
+  padding-top: 176px;
+  font-family: "Open Sans";
+}
+.inner-block {
+  padding: 0 89px 0 109px;
+  max-width: 1615px;
+}
