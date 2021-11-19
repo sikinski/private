@@ -1,0 +1,77 @@
+$blue-text: #004f71;
+
+.ethers {
+  .ether {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 73.8%;
+    height: 588px;
+    background: url(../img/ether-bg.png);
+    background-size: cover;
+    margin-top: 127px;
+    margin-bottom: 60px;
+    .text {
+      position: absolute;
+      top: 56px;
+      right: 71px;
+      font-size: 18px;
+      line-height: 160%;
+      color: $blue-text;
+    }
+    .notify-text {
+      &:after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: #e63434;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+    .icon {
+      width: auto;
+      height: auto;
+    }
+    .btn {
+      width: 23.6%;
+      height: 75px;
+      margin-top: 69px;
+      border: 2px solid rgba(0, 79, 113, 0.15);
+      border-radius: 68px;
+      font-size: 14px;
+      line-height: 150%;
+      color: $blue-text;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 49px;
+      color: $blue-text;
+      margin: 23px 0;
+    }
+    .subtitle {
+      margin: 5px 0;
+      font-size: 14px;
+      line-height: 150%;
+      color: $blue-text;
+    }
+  }
+  .examples {
+    display: flex;
+    position: relative;
+    .ex-2 {
+      border: 2px solid #009ee2;
+    }
+  }
+  .example:hover {
+    border: 2px solid #009ee2;
+  }
+}
