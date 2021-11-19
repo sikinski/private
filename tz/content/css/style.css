@@ -11,72 +11,174 @@
     align-items: flex-start;
     width: 100%;
     margin: 25px 0; }
-    .news .news-wrapper .news-card {
-      width: 28%; }
-      .news .news-wrapper .news-card .cover-pic {
-        width: 100%;
-        height: auto;
-        border-radius: 10px; }
-      .news .news-wrapper .news-card .title {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 160%;
-        color: #004f71;
-        margin-top: 26.5px; }
-      .news .news-wrapper .news-card .desc {
-        font-size: 14px;
-        line-height: 150%;
-        color: rgba(0, 79, 113, 0.5);
-        margin: 11px 0; }
-      .news .news-wrapper .news-card .date {
-        font-size: 14px;
-        line-height: 150%;
-        color: rgba(0, 79, 113, 0.5); }
 
-.basic-lessons {
-  padding: 36.5px; }
-  .basic-lessons .header {
+.news-card {
+  width: 28%; }
+  .news-card .cover-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; }
+  .news-card .title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: #004f71;
+    margin-top: 26.5px; }
+  .news-card .desc {
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(0, 79, 113, 0.5);
+    margin: 11px 0; }
+  .news-card .date {
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(0, 79, 113, 0.5); }
+
+.basic-lessons,
+.additional-lessons {
+  padding-top: 36.5px; }
+  .basic-lessons .header,
+  .additional-lessons .header {
     display: flex;
-    justify-content: space-between; }
-  .basic-lessons .lessons-wrapper {
+    justify-content: space-between;
+    align-items: center; }
+  .basic-lessons .lessons-wrapper,
+  .additional-lessons .lessons-wrapper {
     display: flex;
     position: relative;
+    justify-content: space-between;
     align-items: center;
     margin: 32px 0; }
-    .basic-lessons .lessons-wrapper .arrow-btn {
+    .basic-lessons .lessons-wrapper .lesson,
+    .additional-lessons .lessons-wrapper .lesson {
+      width: 31.4%; }
+      .basic-lessons .lessons-wrapper .lesson .pic-wrapper,
+      .additional-lessons .lessons-wrapper .lesson .pic-wrapper {
+        width: 400px;
+        height: 239px; }
+    .basic-lessons .lessons-wrapper .arrow-btn,
+    .additional-lessons .lessons-wrapper .arrow-btn {
       width: 40px;
       height: 40px;
-      margin: 0 23px;
       border: 2px solid rgba(0, 158, 226, 0.15);
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%; }
-    .basic-lessons .lessons-wrapper .arrow-left {
+    .basic-lessons .lessons-wrapper .arrow-left,
+    .additional-lessons .lessons-wrapper .arrow-left {
       background-image: url(../icons/arrow-left.svg);
       background-size: auto;
       background-position: center;
       background-repeat: no-repeat; }
-    .basic-lessons .lessons-wrapper .arrow-right {
+    .basic-lessons .lessons-wrapper .arrow-right,
+    .additional-lessons .lessons-wrapper .arrow-right {
       background-image: url(../icons/arrow-right.svg);
       background-size: auto;
       background-position: center;
       background-repeat: no-repeat; }
-    .basic-lessons .lessons-wrapper .lessons {
+    .basic-lessons .lessons-wrapper .lessons,
+    .additional-lessons .lessons-wrapper .lessons {
       display: flex;
       justify-content: space-between; }
-      .basic-lessons .lessons-wrapper .lessons .lesson {
-        width: 31.4%; }
-        .basic-lessons .lessons-wrapper .lessons .lesson .cover-pic {
-          width: 100%;
-          height: auto; }
-        .basic-lessons .lessons-wrapper .lessons .lesson .access-text {
-          position: absolute;
-          bottom: -43px;
-          font-size: 14px;
-          line-height: 150%;
-          color: #34e590; }
+
+.additional-lessons {
+  margin-top: 59px; }
+
+.lesson {
+  display: flex;
+  flex-direction: column; }
+  .lesson .pic-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; }
+    .lesson .pic-wrapper .cover-pic {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      z-index: -4; }
+    .lesson .pic-wrapper .number {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      color: #009ee2; }
+  .lesson .access-text {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #34e590; }
+
+.lessons-blocks .two-examples {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 177px; }
+  .lessons-blocks .two-examples .example {
+    width: 28.6%;
+    margin: 0 42.5px; }
+
+.lessons-blocks .lessons-wrapper {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  grid-row-gap: 123px;
+  margin: 82px 0; }
+  .lessons-blocks .lessons-wrapper .lesson-block {
+    display: flex;
+    position: relative; }
+    .lessons-blocks .lessons-wrapper .lesson-block .pic-wrapper {
+      position: relative; }
+      .lessons-blocks .lessons-wrapper .lesson-block .pic-wrapper .block-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        top: calc(50% - 23px);
+        left: calc(50% - 23px);
+        border: 2px solid rgba(229, 52, 52, 0.15);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%; }
+    .lessons-blocks .lessons-wrapper .lesson-block .text-wrapper {
+      margin-left: 48px;
+      width: auto; }
+      .lessons-blocks .lessons-wrapper .lesson-block .text-wrapper .title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        color: #004f71; }
+      .lessons-blocks .lessons-wrapper .lesson-block .text-wrapper .desc {
+        font-size: 14px;
+        line-height: 150%;
+        color: #004f71; }
+      .lessons-blocks .lessons-wrapper .lesson-block .text-wrapper .access-text {
+        font-size: 14px;
+        line-height: 150%;
+        color: #34e590; }
+      .lessons-blocks .lessons-wrapper .lesson-block .text-wrapper .acquire-btn {
+        width: 166px;
+        height: 55px;
+        border: 2px solid rgba(52, 229, 144, 0.15);
+        border-radius: 68px;
+        color: #34e590; }
+      .lessons-blocks .lessons-wrapper .lesson-block .text-wrapper .test-btn {
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(0, 79, 113, 0.5); }
+      .lessons-blocks .lessons-wrapper .lesson-block .text-wrapper .bottom-0 {
+        position: absolute;
+        bottom: 0; }
+  .lessons-blocks .lessons-wrapper .block-2,
+  .lessons-blocks .lessons-wrapper .block-4 {
+    justify-content: flex-end; }
 
 body {
   font-family: "Open Sans"; }
