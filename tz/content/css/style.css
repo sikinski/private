@@ -54,11 +54,15 @@
       -ms-border-radius: 50%;
       -o-border-radius: 50%; }
     .basic-lessons .lessons-wrapper .arrow-left {
-      background-image: url(../../icons/arrow-left.svg);
-      background-size: contain; }
+      background-image: url(../icons/arrow-left.svg);
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat; }
     .basic-lessons .lessons-wrapper .arrow-right {
-      background-image: url(../../icons/arrow-right.svg);
-      background-size: contain; }
+      background-image: url(../icons/arrow-right.svg);
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat; }
     .basic-lessons .lessons-wrapper .lessons {
       display: flex;
       justify-content: space-between; }
@@ -69,7 +73,7 @@
           height: auto; }
         .basic-lessons .lessons-wrapper .lessons .lesson .access-text {
           position: absolute;
-          bottom: -22px;
+          bottom: -43px;
           font-size: 14px;
           line-height: 150%;
           color: #34e590; }
