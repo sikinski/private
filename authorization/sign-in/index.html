@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Войти</title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+
+  <body>
+    <div class="auth-form-wrapper">
+
+      <div class="oauth">
+
+        <h2 class="title">Войти через социальные сети</h2>
+
+        <div class="socials">
+
+          <button class="social-btn vk-btn">
+            <img
+              width="16"
+              height="16"
+              src="./icons/vk.svg"
+              alt="google icon"
+            />
+            <span class="btn-text">Vk</span>
+          </button>
+
+          <button class="social-btn google-btn">
+            <img
+              width="16"
+              height="16"
+              src="./icons/google.svg"
+              alt="google icon"
+            />
+            <span class="btn-text">Google</span>
+          </button>
+
+          <button class="social-btn facebook-btn">
+            <img
+              width="16"
+              height="16"
+              src="./icons/facebook.svg"
+              alt="google icon"
+            />
+            <span class="btn-text">Facebook</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="delimiter">или</div>
+
+      <form class="auth-form ">
+        <input class="input" type="tel" placeholder="Номер телефона" />
+
+        <button class="btn get-code-btn">Получить код</button>
+
+        <input class="input hidden" type="tel" placeholder="Введите код" />
+
+        <button class="btn resend-code-btn hidden">Отправить код повторно</button>
+
+        <button class="btn log-in-btn hidden">Войти</button>
+      </form>
+      
+      <p class="no-account">Нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+    </div>
+
+  </body>
+</html>

@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Войти</title>
+    <title>Зарегистрироваться</title>
 
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
 
   <body>
     <div class="auth-form-wrapper">
+
       <div class="oauth">
-        <h2 class="title">Войти через социальные сети</h2>
+
+        <h2 class="title">Зарегистрироваться через социальные сети</h2>
+
         <div class="socials">
+
           <button class="social-btn vk-btn">
             <img
               width="16"
@@ -22,6 +26,7 @@
             />
             <span class="btn-text">Vk</span>
           </button>
+
           <button class="social-btn google-btn">
             <img
               width="16"
@@ -31,6 +36,7 @@
             />
             <span class="btn-text">Google</span>
           </button>
+
           <button class="social-btn facebook-btn">
             <img
               width="16"
@@ -40,19 +46,31 @@
             />
             <span class="btn-text">Facebook</span>
           </button>
+
         </div>
+
       </div>
+
       <div class="delimiter">или</div>
+
       <form class="auth-form ">
+
+        <input class="input" type="text" placeholder="Фамилия" />
+
+        <input class="input" type="text" placeholder="Имя" />
+
         <input class="input" type="tel" placeholder="Номер телефона" />
+
         <button class="btn get-code-btn">Получить код</button>
 
         <input class="input hidden" type="tel" placeholder="Введите код" />
+
         <button class="btn resend-code-btn hidden">Отправить код повторно</button>
 
         <button class="btn log-in-btn hidden">Войти</button>
       </form>
-      <p class="no-account">Нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+      
+      <p class="no-account">Уже зарегистрированы? <a href="#">Войти</a></p>
     </div>
 
   </body>
